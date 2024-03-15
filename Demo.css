@@ -1,0 +1,260 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgba(4, 120, 252, 0.885);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1vmax;
+}
+
+
+#Main
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    justify-content: space-between;
+}
+
+#InputData
+{
+    position: relative;
+    left: 50px;
+    height: 60vh;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(87, 86, 86);
+
+}
+
+#InputData form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+}
+#InputData form input
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(60, 59, 59);
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+#InputData form input::placeholder
+{
+    color: gray;
+}
+
+
+#InputData form div button:first-of-type
+{
+    background-color: rgb(5, 161, 234);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: 18px;
+}
+
+
+#InputData form div button:last-of-type
+{
+    background-color: rgb(234, 5, 120);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: 18px;
+}
+
+
+
+
+#InputData form div
+{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 10px;
+}
+
+
+#OutputData
+{
+    /* border: 3px solid red; */
+    width: 650px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#UserDataShowCase
+{
+    height: 70vh;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+    color: black;
+    visibility: hidden;
+    flex-direction: column;
+}
+
+
+
+#Close
+{
+    padding: 8px 17px;
+    background:none;
+    background-color: rgb(29, 28, 28);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    /* font-size: 25px; */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    user-select: none;
+
+}
+#Close:active
+{
+    transform: scale(0.95);
+}
+
+
+
+#UserDataShowCase table td
+{
+    padding: 10px;
+    color: black;
+
+}
+
+#BtnGrp
+{
+    display: flex;
+    column-gap: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+#BtnGrp button:first-of-type{
+    background-color: rgb(5, 161, 234);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: 18px;
+}
+
+#BtnGrp button:last-of-type
+{
+    background-color: rgb(234, 5, 120);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: 18px;
+}
+
+
+#BtnGrp button:active
+{
+    transform: scale(0.95);
+}
+
+
+
+#UserNameShowCase
+{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+
+
+
+#UserList
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+
+
+#UserList p 
+{
+    
+    padding: 15px;
+    margin: 10px;
+    background-color: lightblue;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#UserList p span
+{
+    font-weight: bold;
+    background-color: rgb(230, 234, 235);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+#UserList p:hover
+{
+    background-color: rgb(109, 199, 229);
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#UserList p:active
+{
+    transform: scale(0.97);
+}

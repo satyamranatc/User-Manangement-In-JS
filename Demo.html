@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="./Demo.css">
+</head>
+<body>
+
+    <div id="Main">
+        <div id="InputData">
+            <form id = "UserDataForm">
+                <input type="text" name="id" id="phone" placeholder="Enter your Id: ">
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                <input type="text" name="email" id="email" placeholder="Enter your Age">
+            
+                <div>
+                    <button type="submit">Submit</button> 
+                    <button type="reset">Reset</button> 
+
+                </div>
+            </form>
+        </div>
+
+        <div id="OutputData">
+            
+            <div id="UserDataShowCase">
+                <button id = "Close" onclick="CloseDataShowCase()">Close</button>
+           
+               <table border="1">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               </table>
+               <div id="BtnGrp">
+                <button id = "UpdateBtn">Update</button>
+                <button id = "DeleteBtn">Delete</button>
+            </div>
+           
+            </div>
+
+                <div id="UserNameShowCase">
+                    <h2>Users</h2>
+                    <hr>
+
+                    <div id="UserList"></div>
+
+                    
+                </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="./Demo.js"></script>
+</html>
